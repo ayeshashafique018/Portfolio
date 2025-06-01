@@ -1,0 +1,59 @@
+/* custom.css */
+
+/* Background colors */
+.bg-primary-custom {
+  background-color: #FEF2F4 !important; /* off-white pinkish background */
+}
+
+.bg-secondary-custom {
+  background-color: #FCC8D1 !important; /* very light pink background */
+}
+
+/* Text colors */
+.text-primary-custom {
+  color: #D14D72 !important; /* vibrant pinkish red text */
+}
+
+.text-secondary-custom {
+  color: #FFABAB !important; /* light pastel pink text */
+}
+
+/* Links */
+a {
+  color: #FFABAB; /* light pastel pink links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #D14D72; /* vibrant pinkish red on hover */
+}
+
+/* Buttons */
+.btn-custom {
+  background-color: #D14D72; /* vibrant pinkish red buttons */
+  color: #FEF2F4; /* off-white text */
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #FFABAB; /* light pastel pink on hover */
+  color: #D14D72; /* vibrant pinkish red text */
+}
+
+/* Navbar background */
+.navbar-custom {
+  background-color: #FEF2F4; /* off-white pinkish navbar */
+  color: #D14D72;
+}
+
+/* Footer background */
+.footer-custom {
+  background-color: #FCC8D1; /* very light pink footer */
+  color: #D14D72; /* vibrant pinkish red text */
+}
+
+/* Borders if needed */
+.border-custom {
+  border-color: #FFABAB !important; /* light pastel pink borders */
+}
