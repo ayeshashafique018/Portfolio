@@ -4,7 +4,7 @@ export const projects = [
   description:
     "A modern, multi-page tech startup website with a clean UI, fully responsive design, smooth navigation, and optimized layout. Built to demonstrate strong frontend fundamentals, scalability, and user-focused design principles.",
 
-  image: "src/assets/images/visionyx.png",
+  image: "/images/visionyx.png",
   link: "https://visionyx.vercel.app/",
 
   tools: [
@@ -20,7 +20,7 @@ export const projects = [
 
   {
   title: 'Ecommerce Admin Dashboard',
-  image: 'src/assets/images/admin.png',
+  image: '/images/admin.png',
   link: 'https://ecommerce-admin-dashboard-pink.vercel.app',
   description:
     'A modern, responsive admin dashboard built with React (Vite) featuring analytics, product and user management, charts, AI integration, and a scalable, production-ready architecture.',
@@ -41,7 +41,7 @@ export const projects = [
 
   {
     title: 'Todo React App',
-    image: 'src/assets/images/todo.png',
+    image: '/images/todo.png',
     link: 'https://todo-puce-phi-15.vercel.app',
     description:
       'A React-based task manager with authentication, filtering, search, and responsive design. Recognized as the second-best project in a MERN Bootcamp.',
@@ -61,7 +61,7 @@ export const projects = [
   // ✅ NEW PROJECT 1 — Coffee Corner
   {
     title: 'Coffee Corner',
-    image: 'src/assets/images/coffe corner.png',
+    image: '/images/coffe corner.png',
     link: 'https://coffeecorner-phi.vercel.app/',
     description:
       'An interactive coffee shop system with live cart, search, and receipt generation using DOM manipulation and JSON data.',
@@ -80,7 +80,7 @@ export const projects = [
   // ✅ NEW PROJECT 2 — DevConnect
   {
     title: 'DevConnect',
-    image: 'src/assets/images/devvv.png',
+    image: '/images/devvv.png',
     link: 'https://devconnect-3l7n.vercel.app/',
     description:
       'A modern developer networking platform with role-based dashboards, profile system, project suggestions, and collaborative features.',
@@ -100,7 +100,7 @@ export const projects = [
   // ✅ NEW PROJECT 3 — Gracious Garments
   {
     title: 'Gracious Garments',
-    image: 'src/assets/images/garments.png',
+    image: '/images/garments.png',
     link: 'https://github.com/ayeshashafique018/Gracious-Garments-Website',
     description:
       'A clothing store website where users can browse products, compare items, view details, and explore categories with a smooth UI.',
@@ -119,7 +119,7 @@ export const projects = [
     // ✅ Blog Page
   {
     title: 'Ayesha Blog',
-    image: 'src/assets/images/blog.png',
+    image: '/images/blog.png',
     link: 'https://ayesha-blog-seven.vercel.app/',
     description:
       'A Vite-powered React blog with dynamic UI, smooth performance, and scalable architecture.',
@@ -137,7 +137,7 @@ export const projects = [
   // ✅ Emoji Maker
   {
     title: 'Emoji Maker',
-    image: 'src/assets/images/emoji.png',
+    image: '/images/emoji.png',
     link: 'https://emoji-maker-pi.vercel.app/',
     description:
       'A lightweight interactive app to create, customize, and download custom emojis with an intuitive UI.',
@@ -157,7 +157,7 @@ export const projects = [
   // ✅ Graduation Gift Website
   {
     title: 'Graduate Web Gift',
-    image: 'src/assets/images/gift.png',
+    image: '/images/gift.png',
     link: 'https://graduate-web.vercel.app/',
     description:
       'A personalized graduation gift website designed to celebrate a friend with memories and a modern UI.',
