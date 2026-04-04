@@ -1,0 +1,48 @@
+body {
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  background: linear-gradient(135deg, #1e2a47, #0a121f);
+}
+a { colo.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5); /* light placeholder */
+  opacity: 1; /* ensure consistent rendering */
+}
+
+.form-control {
+  color: #ffffff; /* input text color */
+}r: #63AAFF; }
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff !important; /* ✅ force white text */
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.social-btn span {
+  color: #ffffff !important; /* ✅ ensures text inside is also white */
+}
+
+.social-btn svg {
+  color: #ffffff; /* ✅ keeps icons white */
+}
+
+.social-btn:hover {
+  color: #d7d7d7 !important;
+  transform: translateY(-1px);
+}
+.services-box {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE 10+ */
+  padding-right: 10px;            /* To avoid text hugging right edge */
+  line-height: 2rem;
+}
+
+.services-box::-webkit-scrollbar {
+  display: none;                  /* Chrome/Safari */
+}

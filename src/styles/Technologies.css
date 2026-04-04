@@ -1,0 +1,49 @@
+.tech-slider {
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(200%);
+  animation: scroll 25s linear infinite;
+  align-items: center;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  padding: 0 20px;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.slide:hover {
+  transform: scale(1.1);
+}
+
+.slide img {
+  max-height: 50px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.tech-name {
+  font-size: 0.85rem;
+  color: #bbb;
+  margin: 0;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

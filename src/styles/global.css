@@ -1,0 +1,309 @@
+/* src/styles/global.css */
+
+/* ----- GLOBAL STYLES ----- */
+
+html {
+  /* Uncomment if you want smooth scroll globally */
+  /* scroll-behavior: smooth; */
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #1e2a47, #0a121f);
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  color: #63AAFF;
+  text-decoration: none;
+}
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+section {
+  padding: 80px 0;
+ background-color: #0C0D0E;
+}
+
+/* ---------- AVAILABILITY BADGE ---------- */
+.availability-badge {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #1e2a47a6;
+  color: white;
+  padding: 6px 14px;
+  margin-bottom: 20px;
+  margin-left: 7px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 0 12px rgba(0, 255, 115, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #00ff73;
+  border-radius: 50%;
+  margin-right: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation for green dot */
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.6;
+  }
+}
+
+.learning-progress-section {
+  padding: 60px 20px;
+  background-color: #0a121f;
+  color: white;
+}
+
+.progress-card {
+  background-color: #1e2a47;
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+}
+
+.progress-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.progress-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.progress-percent {
+  font-weight: bold;
+  color: #63aaff;
+}
+
+.progress-bar-container {
+  background-color: #0f1a2c;
+  height: 8px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.progress-bar-fill {
+  background-color: #63aaff;
+  width: 100%;
+  height: 100%;
+  animation: growBar 1.5s ease-in-out forwards;
+}
+
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.progress-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.phase-box {
+  flex: 1;
+  min-width: 240px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #0f1a2c;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.phase-box ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.phase-box li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+
+
+/* ----- BUTTONS ----- */
+
+.btn-primary {
+  background-color: #63AAFF;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #4a92dd;
+  transform: scale(1.05);
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.glow-button {
+  box-shadow: 0 0 20px rgba(99, 170, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 40px rgba(99, 170, 255, 0.8);
+  transform: scale(1.08);
+}
+
+/* ----- TEXT ----- */
+
+.text-gradient {
+  background: linear-gradient(90deg, #63AAFF, #9AC9FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-icon:hover {
+  color: #63AAFF;
+  text-shadow: 0 0 10px #63AAFF;
+}
+
+/* ----- CARDS ----- */
+
+.card {
+  background-color: #1e2a47;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ----- NAVBAR ----- */
+.container {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+\/* Navbar base */
+.navbar {
+  backdrop-filter: blur(10px);
+  background: black;
+  transition: all 0.1s ease;
+  padding: 0.8rem 1rem;
+  border-radius: 0;
+  margin: 0;
+}
+
+.navbar.scrolled {
+  background: black;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* Nav links */
+.navbar .nav-link {
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.navbar .nav-link:hover {
+  color: #71B2FF;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #71B2FF;
+  border: none;
+  color: white;
+  font-weight: 500;
+  padding: 8px 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #5aa4f5;
+}
+
+/* Responsive: full navbar shows in toggled state */
+@media (max-width: 991.98px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar .navbar-collapse {
+    padding-top: 1rem;
+  }
+}
+
+.navbar-brand span {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* In your App.css or index.css */
+.services-box::-webkit-scrollbar {
+  width: 6px;
+}
+.services-box::-webkit-scrollbar-thumb {
+  background-color: #444;
+  border-radius: 10px;
+}
+.services-box {
+  scrollbar-width: thin;
+  scrollbar-color: #444 transparent;
+}
