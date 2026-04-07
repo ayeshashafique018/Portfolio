@@ -1,2 +1,2 @@
-PORTFOLIO 
+PORTFOLIO ...
 A modern, responsive developer portfolio showcasing my projecPts, skills, and services with a clean UI and smooth user experience.
